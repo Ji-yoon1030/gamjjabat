@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: Noto Sans KR, serif;
+    background-color: white;
+    margin: 0;
+}
+
+header{
+    background-color: white;
+    margin: 0;
+    top: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    border: 1px solid #818181;
+}
+
+.box{
+    background-color: white;
+    margin: 0;
+    padding: 1% 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.top_banner{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF6C37;
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.logoButton img{
+    height: 100%;
+    max-width: 100%;
+}
+
+.logoButton{
+    margin: 0;
+    width: 20%;
+    height: 60px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.logoButton:hover {
+    outline: none;
+    background: none;
+    border: none;
+}
+
+.searchbox {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    width: 50%;
+}
+
+.menuContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30%;
+    position: absolute;
+    bottom: 28%;
+    right: 5%;
+}
+
+.icons {
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+}
+
+.iconLink {
+    text-decoration: none;
+}
+
+.icons a{
+
+}
+
+main{
+    background-color: white;
+}
+
+#container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    background-color: white;
+}
+
+#leftbox {
+    width: 50%;
+    padding-left: 5%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+#logotext {
+    font-family: 'Noto Serif', sans-serif;
+    font-weight: normal;
+    font-size: 60px;
+    color: #241A13;
+    height: 60%;
+    line-height: 0.8;
+    margin-top: 120px;
+}
+
+#subname {
+    margin-right: 200px;
+    font-size: 80px;
+    display: block;
+    position: relative;
+    bottom: 50px;
+    text-align: right;
+}
+
+#name {
+    font-weight: bold;
+    font-size: 80px;
+    margin-left: 20px;
+    margin-bottom: 0;
+    line-height: 0;
+}
+
+#intro {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: left;
+    line-height: 1.2;
+    padding: 0;
+    overflow-wrap: break-word;
+}
+
+#writeButton {
+    background-color: #241A13;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    width: 30%;
+    font-size: 20px;
+    font-family: 'Noto Serif', sans-serif;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+#writeButton:hover {
+    background-color: #383020;
+}
+
+#imageSection {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: auto;
+    z-index: 0;
+}
+
+.highlightImage {
+    max-width: 80%;
+    height: auto;
+    border-radius: 15px;
+    background-color: white;
+    padding: 15px;
+    border: 4px solid white;
+}
+
+#container1 {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#rightbox {
+    width: 40%;
+    height: 80vh;
+    background-color: #FF6C37;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+#image {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+#text1{
+    text-align: left;
+    font-weight: bold;
+    font-family: Noto Sans KR, serif;
+    font-size: 26px;
+    color: #000000;
+    margin: 8% 0 2% 8%;
+}
+
+.image_container {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 8%;
+    white-space: nowrap;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.item{
+    flex: 0 0 20vw;
+    height: 35vh;
+    background-color: #cccccc;
+    margin: 1%;
+}
+
+.image_container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.container_top {
+    flex: 0 0 auto;
+    width: 350px;
+    height: 500px;
+    margin-right: 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+}
+
+.image_box {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.text_overlay {
+    padding: 10px 10px 10px 20px;
+    width: 100%;
+}
+
+.hash_tags {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.image_container {
+    scroll-snap-type: x mandatory;
+}
+
+.image_container::-webkit-scrollbar {
+    display: none;
+}
+
+.box_0 {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    background: url('../images/main1.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+
+.box_1 {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    background: url('../images/main2.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.box_2 {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    background: url('../images/main3.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.box_3 {
+    position: relative;
+    width: 350px;
+    height: 500px;
+    background: url('../images/main4.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.box_4{
+    position: relative;
+    width: 350px;
+    height: 500px;
+    background: url('../images/main5.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.box_5{
+    background-color: #D9D9D9;
+}

@@ -1,0 +1,41 @@
+.scroll_button {
+  position: fixed;
+  width: 3em;
+  height: 3em;
+  bottom: 25%;
+  right: 20px;
+  z-index: 1000;
+  padding: 10px;
+  background-color: #000;
+  color: #f27142;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease;
+}
+
+.scroll_button:hover {
+  background-color: #f27142;
+}
+
+.post_button {
+  position: fixed;
+  width: 3em;
+  height: 3em;
+  bottom: 10%;
+  right: 20px;
+  z-index: 1000;
+  padding: 10px;
+  background-color: #f27142;
+  color: #000;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease;
+}
+
+.post_button:hover {
+  background-color: #000;
+}

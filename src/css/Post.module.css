@@ -1,0 +1,140 @@
+.noto-sans-kr {
+  font-family: 'Noto Sans KR', sans-serif;
+  /* font-optical-sizing: auto; */
+  font-weight: 100;
+  font-style: normal;
+}
+
+.line {
+  height: 1.5px;
+  background-color: black;
+  margin-top: 20px;
+}
+
+.createPostContainer {
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.title {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #343a40;
+  margin-top: 10%;
+}
+
+.label {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16px;
+  color: #495057;
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+
+.hiddenInput {
+  display: none; /* Hides the default file input */
+}
+
+.uploadButton {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: rgb(84, 84, 84);
+  background-color: rgb(237, 237, 237);
+  border: 0;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid rgb(61, 61, 61);
+  font-size: 12px;
+  padding: 0.2em 0.4em;
+
+  /* width: 200px;
+  height: 200px;
+  background-color: #bebebe;
+  display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+#postTitle {
+  font-family: 'Noto Sans KR', sans-serif;
+  border: 1px solid #ced4da;
+  padding: 10px;
+  border-radius: 0px;
+}
+
+.button {
+  font-family: 'Noto Sans KR', sans-serif;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.imagePreviewContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.imagePreviewWrapper {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border: 2px solid #ced4da;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagePreview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Crops the image to fit inside the square */
+}
+
+.removeButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #979b9f7f;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  font-size: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  line-height: 1;
+  padding: 0;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.button_draft {
+  font-family: 'Noto Sans KR', sans-serif;
+  padding: 0.5em 2em;
+  font-size: 12px;
+  margin-right: 2em;
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+.button_post {
+  font-family: 'Noto Sans KR', sans-serif;
+  padding: 0.5em 2em;
+  font-size: 12px;
+  background-color: #ff6c37;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+}

@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Pretendard-400';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    font-family: 'Pretendard-400';
+    /*text-align: center;*/
+    border: 1px solid darkgray;
+    width: 70vw;
+    height: 80vh;
+    margin: 20% 15% 100% 15%;
+}
+
+.title {
+    font-family: 'Pretendard-400';
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #E1A325;
+    margin: 4%;
+}
+
+.info_box {
+    border: 1px solid #ccc;
+    width: 35vw;
+    margin: 0 auto;
+}
+
+.info_row {
+    font-family: 'Pretendard-400';
+    display: flex;
+    margin: 10%;
+}
+
+.info_item {
+    font-family: 'Pretendard-400';
+    font-size: 13px;
+    width: 20%;
+}
+
+.info_value {
+    font-family: 'Pretendard-400';
+    font-size: 13px;
+    margin-left: 3%;
+}
+
+.btn{
+    font-family: 'Pretendard-400';
+    background-color: #8A6F4B;
+    border: none;
+    color: white;
+    padding: 1.5%;
+    font-size: 15px;
+    width: 20%;
+    cursor: pointer;
+    margin: 4% 40%;
+}

@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.notification{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.sidebar{
+    width: 500px;
+    flex-shrink: 0;
+}
+
+.mypageContainer {
+    flex-grow: 1;
+    padding-left: 10px;
+}
+
+.bar{
+    font-family: Pretendard-Regular, serif;
+    width: 250px;
+    height: 150vh;
+    flex-shrink: 0;
+
+}
+
+.logo{
+    margin: 200px 50px 0 50px;
+    height: 40px;
+    text-align: center;
+    align-content: center;
+    background-color: #D9D9D9;
+    font-size: 20px;
+}
+
+.title{
+    margin: 80px 0 40px 0;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+}
+
+.subtitle{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.subtitle a{
+    margin: 30px 0 0 70px;
+    text-decoration: none;
+    list-style-type: none;
+    color: #333;
+}
+
+/*mypageContainer의 css*/
+
+.mypage{
+    margin: 300px 100px;
+    font-family: Pretendard-Regular, sans-serif;
+    width: 1500px;
+    height: 500vh;
+    display: inline-block;
+}
+
+.mypage a{
+    text-decoration: none;
+    list-style-type: none;
+    color: #333;
+}
+
+hr{
+    border-top: 2px solid black;
+    margin: 0;
+    width: 100%;
+}
+
+.pagetitle{
+    font-weight: bold;
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.option{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    margin: 50px 0 10px;
+}
+
+.optionContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.toggleSwitch {
+    width: 100px;
+    margin: 50px 50px 0;
+    height: 50px;
+    display: block;
+    position: relative;
+    border-radius: 30px;
+    background-color: #515151;
+    box-shadow: 0 0 16px 3px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.toggleButton {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: white;
+    transition: all 0.2s ease-in;
+}
+
+.toggleSwitch.active {
+    background: white;
+}
+
+.toggleSwitch.active .toggleButton {
+    left: calc(100% - 44px);
+    background-color: #515151;
+}
+
+.toggleSwitch.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.toggleSwitch.disabled .toggleButton {
+    background: #ccc;
+}
+
+
+
+/*addressBook의 css*/
+.address{
+    display: flex;
+    flex-direction: row;
+}
+
+.pageoption{
+    position: relative;
+    bottom: 10px;
+    font-size: 18px;
+    float: right;
+}
+
+
+/*AccountContainer의 css*/
+.account{
+    margin: 300px 100px;
+    font-family: Pretendard-Regular, sans-serif;
+    width: 1200px;
+    height: 100vh;
+}
+
+.accountarr{
+    display: flex;
+    flex-direction: row;
+}
+
+.field{
+
+}
+
+.fieldtitle{
+    font-weight: bold;
+    font-size: 25px;
+    margin: 50px 10px 50px;
+}
+
+.subinfo{
+    color: #999999;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.label{
+    font-size: 20px;
+}
+
+.value{
+    margin: 20px 0;
+    padding: 10px;
+    border-bottom: 1px solid #999999;
+}
+.labelContainer{
+    color: #999999;
+    margin: 100px 0;
+}
+
+.logoutLabel{
+    margin: 0 10px;
+}
+
+.profile{
+    height: 30vh;
+    border-bottom: 1px solid #999999;
+}

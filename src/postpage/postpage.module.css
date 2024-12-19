@@ -1,0 +1,153 @@
+.container {
+    width: 80%;
+    margin: 200px 150px;
+    padding: 20px;
+    background-color: white;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.title {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.separator {
+    border: 3px solid black;
+    margin-bottom: 50px;
+}
+
+.formGroup {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.label {
+    font-size: 25px;
+    flex-basis: 200px;
+    text-align: left;
+}
+
+.input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.textArea {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 150px;
+}
+
+.imageUpload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imageBox {
+    width: 200px;
+    height: 200px;
+    background-color: #bebebe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 관련 상품 태그 섹션 */
+.relatedTagSection {
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E5E5E5;
+    border-radius: 10px;
+}
+
+.tagBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+.tagText {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    padding-left: 10px;
+}
+
+.tagSubText{
+    font-size: 15px;
+    font-weight: normal;
+    color: #828282;
+}
+
+.addButton {
+    padding-right: 20px;
+    font-size: 40px;
+    cursor: pointer;
+    color: black;
+    border: none;
+    background-color: #e0e0e0;
+}
+
+.tagContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.tagInput {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 20%;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: right;
+    margin-top: 80px;
+}
+
+.saveButton {
+    padding: 15px 40px;
+    margin-right: 20px;
+    background-color: #ccc;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.saveButton:hover{
+    background-color: #818181;
+}
+
+.submitButton {
+    padding: 15px 40px;
+    background-color: #ff5722;
+    border: none;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.submitButton:hover {
+    background-color: #ff7f50;
+}

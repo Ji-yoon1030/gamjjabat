@@ -1,0 +1,291 @@
+@font-face {
+  font-family: "Pretendard-400";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+.section1 {
+  margin-top: 10rem;
+  margin-bottom: 1rem;
+  height: 50%;
+}
+
+.profile {
+  display: flex;
+  font-family: "Pretendard-400", sans-serif;
+  height: auto;
+  width: 25vw;
+  border: 1px solid #000000;
+  margin-left: 3%;
+}
+
+.section2 {
+  display: flex;
+  /* margin: 2% 8%; */
+}
+
+.section_img {
+  display: flex;
+  scroll-behavior: smooth;
+  width: fit-content;
+  height: 100%;
+  margin: 0 2%;
+  overflow-x: hidden;
+  display: flex;
+}
+
+.scrollable {
+  display: flex;
+}
+
+.img {
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 16px;
+  width: fit-content;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.info {
+  display: grid;
+  grid-template-rows: repeat(3, auto); /* 모든 자식의 높이를 동일하게 설정 */
+  gap: 4vh; /* 요소 간 간격 */
+  width: 100%;
+}
+
+.info_in {
+  display: flex;
+  position: relative;
+  height: 20vh;
+  width: 100%;
+  border: #000000;
+  background-color: #efefef;
+  border-radius: 16px;
+}
+
+.img_1 {
+  flex-shrink: 0; /* 이미지를 스크롤 가능하게 고정 */
+  object-fit: cover;
+  display: inline-block;
+  width: 15%;
+  height: 70%;
+  margin: 3%;
+  object-fit: contain;
+}
+
+.desc {
+  display: flex;
+  width: 100%;
+  margin: 3% 3% 3% 0;
+  padding-left: 3%;
+  font-family: "Pretendard-400", sans-serif;
+  border-left: 3px solid #000000;
+}
+
+.section3 {
+  display: flex;
+  margin: 1% 4%;
+  flex-direction: column;
+}
+
+.func {
+  display: flex;
+  align-items: center;
+  height: 5vh;
+}
+
+/* CardSlider */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20% 8%;
+}
+
+.slidercontents {
+  height: 480px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.wrapText {
+  margin-left: 12%;
+}
+
+/* CardSlider Styles */
+.carousel {
+  width: 60%;
+  margin-right: 2rem;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+
+.carouselImage {
+  width: 100%;
+  height: 600px; /* Adjust this value to match your desired height */
+  object-fit: contain;
+  /* background-color: #f8f8f8; */
+}
+
+/* Custom carousel control buttons */
+:global(.carousel-control-prev),
+:global(.carousel-control-next) {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  top: 50% !important;
+  transform: translateY(-50%);
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+:global(.carousel-control-prev) {
+  left: 20px;
+}
+
+:global(.carousel-control-next) {
+  right: 20px;
+}
+
+.carousel:hover :global(.carousel-control-prev),
+.carousel:hover :global(.carousel-control-next) {
+  opacity: 0.8;
+}
+
+:global(.carousel-control-prev):hover,
+:global(.carousel-control-next):hover {
+  opacity: 1 !important;
+}
+
+/* Custom icon colors */
+:global(.carousel-control-prev-icon),
+:global(.carousel-control-next-icon) {
+  filter: invert(1) grayscale(100);
+}
+
+/* HeartButton */
+.heartButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  transition: transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heartButton:hover {
+  transform: scale(1.1);
+  background: none;
+}
+
+.heart,
+.heartFill {
+  font-size: 24px;
+  transition: all 0.2s ease;
+}
+
+.heart {
+  color: #666;
+}
+
+.heartFill {
+  color: #ff4b4b;
+  animation: heartPop 0.3s ease;
+  width: 3vw;
+  height: 3vh;
+}
+
+@keyframes heartPop {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.comment_box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.comment_input_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.comment_profile {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.comment_input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+
+.comment_submit {
+  padding: 8px 16px;
+  border-radius: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.comment_list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+}
+
+.comment_item {
+  display: flex;
+  gap: 10px;
+}
+
+.comment_content {
+  flex: 1;
+}
+
+.comment_user_info {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.user_id {
+  font-weight: bold;
+}
+
+.comment_time {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.comment_text {
+  margin-top: 4px;
+}
